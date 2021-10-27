@@ -41317,3 +41317,146 @@ Processing by WelcomesController#start as HTML
 Completed 200 OK in 110ms (Views: 86.6ms | ActiveRecord: 6.8ms | Allocations: 27676)
 
 
+Started GET "/" for 131.147.229.62 at 2021-10-25 10:51:47 +0000
+Cannot render console from 131.147.229.62! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomesController#start as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcomes/start.html.erb within layouts/application
+  [1m[36mWelcomes Load (4.2ms)[0m  [1m[34mSELECT "welcomes".* FROM "welcomes"[0m
+  ↳ app/views/welcomes/start.html.erb:21
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "welcomes"[0m
+  ↳ app/views/welcomes/start.html.erb:40
+  Rendered welcomes/start.html.erb within layouts/application (Duration: 40.7ms | Allocations: 11013)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 96.9ms | Allocations: 26053)
+Completed 200 OK in 113ms (Views: 85.7ms | ActiveRecord: 14.5ms | Allocations: 29226)
+
+
+Started GET "/welcomes/22" for 131.147.229.62 at 2021-10-25 10:51:54 +0000
+Cannot render console from 131.147.229.62! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mWelcomes Load (0.8ms)[0m  [1m[34mSELECT "welcomes".* FROM "welcomes" WHERE "welcomes"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/welcomes_controller.rb:20:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering welcomes/show.html.erb within layouts/application
+  Rendered welcomes/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 479)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 4258)
+Completed 200 OK in 21ms (Views: 15.0ms | ActiveRecord: 1.4ms | Allocations: 6084)
+
+
+Started GET "/welcomes/22/edit" for 131.147.229.62 at 2021-10-25 10:51:58 +0000
+Cannot render console from 131.147.229.62! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomesController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mWelcomes Load (0.7ms)[0m  [1m[34mSELECT "welcomes".* FROM "welcomes" WHERE "welcomes"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/welcomes_controller.rb:24:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering welcomes/edit.html.erb within layouts/application
+  Rendered shared/_error.html.erb (Duration: 0.4ms | Allocations: 184)
+  Rendered welcomes/edit.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2044)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 5830)
+Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 0.7ms | Allocations: 7050)
+
+
+Started PATCH "/welcomes/22" for 131.147.229.62 at 2021-10-25 10:52:08 +0000
+Cannot render console from 131.147.229.62! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomesController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "welcomes"=>{"title"=>"a", "hajime"=>"2021-10-05", "owari"=>"2021-10-31", "memo"=>"a"}, "syuujitu"=>"〇", "commit"=>"編集を完了する", "id"=>"22"}
+  [1m[36mWelcomes Load (0.7ms)[0m  [1m[34mSELECT "welcomes".* FROM "welcomes" WHERE "welcomes"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/welcomes_controller.rb:28:in `update'
+Redirected to https://15ac699d368142e7afabbdb0da2f9483.vfs.cloud9.us-east-2.amazonaws.com/welcomes/start
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms | Allocations: 1511)
+
+
+Started GET "/welcomes/start" for 131.147.229.62 at 2021-10-25 10:52:08 +0000
+Cannot render console from 131.147.229.62! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomesController#start as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcomes/start.html.erb within layouts/application
+  [1m[36mWelcomes Load (0.8ms)[0m  [1m[34mSELECT "welcomes".* FROM "welcomes"[0m
+  ↳ app/views/welcomes/start.html.erb:21
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "welcomes"[0m
+  ↳ app/views/welcomes/start.html.erb:40
+  Rendered welcomes/start.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1979)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 5118)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 1.6ms | Allocations: 5516)
+
+
+Started GET "/welcomes/new" for 131.147.229.62 at 2021-10-25 10:56:18 +0000
+Cannot render console from 131.147.229.62! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcomes/new.html.erb within layouts/application
+  Rendered shared/_error.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered welcomes/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 5549)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 9224)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 9764)
+
+
+Started POST "/welcomes/new" for 131.147.229.62 at 2021-10-25 10:56:28 +0000
+Cannot render console from 131.147.229.62! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"", "hajime"=>"2021-10-11", "owari"=>"2021-10-27", "syuujitu"=>"〇", "memo"=>"", "commit"=>"スケジュールを登録完了する"}
+[31mUnpermitted parameters: :authenticity_token, :commit[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/welcomes_controller.rb:12:in `create'
+  [1m[36mWelcomes Create (5.2ms)[0m  [1m[32mINSERT INTO "welcomes" ("title", "hajime", "owari", "syuujitu", "created_at", "updated_at", "memo") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", ""], ["hajime", "2021-10-10 15:00:00"], ["owari", "2021-10-26 15:00:00"], ["syuujitu", "〇"], ["created_at", "2021-10-25 10:56:28.147487"], ["updated_at", "2021-10-25 10:56:28.147487"], ["memo", ""]]
+  ↳ app/controllers/welcomes_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/welcomes_controller.rb:12:in `create'
+Redirected to https://15ac699d368142e7afabbdb0da2f9483.vfs.cloud9.us-east-2.amazonaws.com/welcomes/start
+Completed 302 Found in 15ms (ActiveRecord: 7.1ms | Allocations: 2798)
+
+
+Started GET "/welcomes/start" for 131.147.229.62 at 2021-10-25 10:56:28 +0000
+Cannot render console from 131.147.229.62! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomesController#start as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcomes/start.html.erb within layouts/application
+  [1m[36mWelcomes Load (0.8ms)[0m  [1m[34mSELECT "welcomes".* FROM "welcomes"[0m
+  ↳ app/views/welcomes/start.html.erb:21
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "welcomes"[0m
+  ↳ app/views/welcomes/start.html.erb:40
+  Rendered welcomes/start.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2168)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 5305)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 1.6ms | Allocations: 5695)
+
+
+Started DELETE "/welcomes/33" for 131.147.229.62 at 2021-10-25 10:56:32 +0000
+Cannot render console from 131.147.229.62! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"33"}
+  [1m[36mWelcomes Load (0.7ms)[0m  [1m[34mSELECT "welcomes".* FROM "welcomes" WHERE "welcomes"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/welcomes_controller.rb:37:in `destroy'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/welcomes_controller.rb:38:in `destroy'
+  [1m[36mWelcomes Destroy (1.4ms)[0m  [1m[31mDELETE FROM "welcomes" WHERE "welcomes"."id" = $1[0m  [["id", 33]]
+  ↳ app/controllers/welcomes_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/welcomes_controller.rb:38:in `destroy'
+Redirected to https://15ac699d368142e7afabbdb0da2f9483.vfs.cloud9.us-east-2.amazonaws.com/welcomes/start
+Completed 302 Found in 11ms (ActiveRecord: 3.9ms | Allocations: 2770)
+
+
+Started GET "/welcomes/start" for 131.147.229.62 at 2021-10-25 10:56:32 +0000
+Cannot render console from 131.147.229.62! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by WelcomesController#start as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcomes/start.html.erb within layouts/application
+  [1m[36mWelcomes Load (0.8ms)[0m  [1m[34mSELECT "welcomes".* FROM "welcomes"[0m
+  ↳ app/views/welcomes/start.html.erb:21
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "welcomes"[0m
+  ↳ app/views/welcomes/start.html.erb:40
+  Rendered welcomes/start.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1965)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 5102)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 1.6ms | Allocations: 5499)
+
+
