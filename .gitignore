@@ -88,3 +88,8 @@ yarn-debug.log*
 /tmp
 /vender
 /.git
+
+/app/*
+!/app/assets/
+!/app/models/
+!/app/views/
